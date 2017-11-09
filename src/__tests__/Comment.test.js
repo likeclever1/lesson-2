@@ -21,7 +21,7 @@ describe('Comment component', () => {
   });
 
   describe('test callbacks', () => {
-    it('call callback onDelete on click', () => {
+    it('call callback handleDelete on click', () => {
       wrapper.find('span.delete').simulate('click');
       expect(onDeleteMock).toHaveBeenCalledTimes(1);
     });
